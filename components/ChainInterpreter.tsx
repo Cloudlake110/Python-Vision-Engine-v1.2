@@ -86,7 +86,7 @@ export const ChainInterpreter: React.FC<Props> = ({ setConsole }) => {
     } else {
       switch(step) {
         case 0: return <span className="text-slate-500">df</span>;
-        case 1: return <span><span className="text-slate-500">df</span><span className="text-pve-amber font-bold">.query("score >= 80")</span></span>;
+        case 1: return <span><span className="text-slate-500">df</span><span className="text-pve-amber font-bold">.query("score &gt;= 80")</span></span>;
         case 2: return <span><span className="text-slate-500">df...query()</span><span className="text-pve-green font-bold">.assign(grade="A")</span></span>;
         case 3: return <span><span className="text-slate-500">df...assign()</span><span className="text-pink-500 font-bold">.sort_values("score")</span></span>;
       }
